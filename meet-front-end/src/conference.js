@@ -21,13 +21,17 @@ function Conference(props) {
   return (
     <div>
       <h1 className="text-xl text-center pt-10">Conference hall</h1>
-      <p>
+      <div className="flex flex-row">
         {users.map((u) => (
           <p key={Math.random()}>{u}</p>
         ))}
-      </p>
+        <video width="700px" height="700px" src="https://meet.jit.si/conftest123">
+          <source src="https://meet.jit.si/conftest123" type="" ></source>
+        </video>
+      </div>
     </div>
   );
 }
+
 
 export default Conference;
